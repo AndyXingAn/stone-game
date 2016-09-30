@@ -1,0 +1,30 @@
+<view class="page">
+<view class="body-view">
+  <toast hidden="{{toast_hidden}}"  bindchange="toastChange">
+    {{toast_info}}
+  </toast>
+</view>
+    <view class="page__hd">
+        <text class="page__title">{{homeNo}}号房间</text>
+    </view>
+    <form class="page__bd" catchsubmit="formSubmit" catchreset="formReset">
+        <view class="section">
+            <view class="section__title">平民：</view>
+            <input name="civilianWord" disabled="{{disableInput}}" value="{{civilianWord}}"/>
+            <input name="openId" style="display:none" value="{{openId}}"/>
+            <input name="num" style="display:none" value="{{num}}"/>
+        </view>
+        <view class="section">
+            <view class="section__title">卧底：</view>
+            <input name="spyWord" disabled="{{disableInput}}" value="{{spyWord}}"/>
+        </view>
+        <view class="section section_gap">
+            <view class="section__title">卧底是第{{spyNo}}号玩家</view>
+        </view>
+        <view class="btn-area">
+            <button bindtap="editInput">更换词汇</button>
+            <button disabled="{{disableInput}}" bindtap="getword">随机选词</button>
+            <button formType="submit" disabled="{{disableInput}}" type="primary">提交完成</button>
+        </view>
+    </form>
+</view>

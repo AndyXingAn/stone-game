@@ -1,12 +1,18 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/component/index",
+    "pages/component/logs/logs",
+    "pages/component/spy-main/spy-main",
+    "pages/component/spy-main/create-home/create-home",
+    "pages/component/spy-main/join-home/join-home",
+    "pages/component/spy-main/host-show/host-show",
+    "pages/component/spy-main/cust-show/cust-show"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+    "backgroundTextStyle":"white",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "小游戏",
+    "navigationBarTextStyle":"white"
+  },
+  "debug": false
 }

@@ -1,0 +1,21 @@
+<view class="page">
+<view class="body-view">
+  <toast hidden="{{toast_hidden}}"  bindchange="toastChange">
+    {{toast_info}}
+  </toast>
+</view>
+    <view class="page__hd">
+        <text class="page__title">{{homeNo}}号房间</text>
+    </view>
+    <view class="page__bd">
+        <view class="section">
+            <view class="section__title font_num">您是第{{no}}号玩家</view>
+            <view class="flex-wrp" style="flex-direction:row;">
+                <view class="flex-item bc_blue">{{showWord}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="button-wrapper">
+            <button type="primary" bindtap="changeWord">更换词汇</button>
+    </view>
+</view>

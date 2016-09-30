@@ -1,0 +1,30 @@
+<view class="page">
+<view class="body-view">
+  <toast hidden="{{toast_hidden}}"  bindchange="toastChange">
+    {{toast_info}}
+  </toast>
+</view>
+    <view class="page__hd">
+        <text class="page__title">创建房间</text>
+    </view>
+    <form class="page__bd" catchsubmit="formSubmit" catchreset="formReset">
+        <view class="section">
+            <view class="section__title">请输入平民词汇：</view>
+            <input name="civilianWord" placeholder="请输入平民词汇" type="text" maxlength="20" value="{{civilianWord}}"/>
+            <input name="openId" style="display:none" value="{{openId}}"/>
+        </view>
+        <view class="section">
+            <view class="section__title">请输入卧底词汇：</view>
+            <input name="spyWord" placeholder="请输入卧底词汇" type="text" maxlength="20" value="{{spyWord}}"/>
+        </view>
+        <view class="section">
+            <view class="section__title">参与人数(建议7人左右)：</view>
+            <slider name="num" min="5" max="10" value="5" show-value ></slider>
+        </view>
+        <view class="btn-area">
+            <button bindtap="getword">随机选词</button>
+            <button  type="primary" formType="submit">提交完成</button>
+            <button  type="warn" formType="reset">重置</button>
+        </view>
+    </form>
+</view>
